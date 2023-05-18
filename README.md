@@ -7,9 +7,9 @@ Currently supported on MacOS only, since the scheduling capability is powered by
 ## Instructions
 # Export your Kindle highlights 
 1. Plug your Kindle into your machine via USB
-2. A 'Kindle' drive should appear on your Desktop
-3. Move the 'My Clippings.txt' file to your Desktop.
-4. Eject your Kindle
+2. A drive titled `Kindle` should appear on your Desktop
+3. Move the `My Clippings.txt` file to your Desktop
+4. Eject the `Kindle` drive
 
 # Install the program
 1. Clone this repository
