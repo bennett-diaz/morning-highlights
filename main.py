@@ -12,8 +12,6 @@ my_file = os.getenv("TXT_FILE")
 
 def main():
     try:
-        # Print to console each time this program is run
-        # If running through launchd, will print to stdout.log instead
         print("This program was run at: " + str(datetime.datetime.now()))
 
         # Parses .txt file into a list of dictionaries (each quote is a dict)
@@ -21,14 +19,14 @@ def main():
         cleaned_list = parse_txt_file.clean_list(original_list)
         deduplicated_list = parse_txt_file.deduplicate_list(cleaned_list)
         final_list = list(deduplicated_list)
-        
+
         list_length = len(final_list)
         print("Total quotes: " + str(list_length))
 
-        # Get the index of the quote to send
+        # Get the index of the quote to send during this iteration
         quote_index = get_quote_index.get_simple_index(list_length)
 
-        # Get the quote body from the dict
+        # Extract the quote string from the dict
         quote_body = final_list[quote_index]["quote"]
 
         # Construct message body that Twilio will deliver

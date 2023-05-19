@@ -5,8 +5,7 @@
     <key>Label</key>
     <string>launchd.kindle.daemon</string>
 
-    <!-- Optional key to run the command at a specified time
-    Currently set to run every day at 6:00PM based on your local machine time -->
+    <!-- Specify time to run the program each day (based on time of your machine) -->
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
@@ -25,17 +24,17 @@
     <string>{insert file path here}</string>
 
     <!-- Input the file path where you want the output log to be saved
-    Example: <string>/Users/john/morning_highlights/stderr.log</string> -->
+    Example: <string>/Users/john/morning_highlights/stdout.log</string> -->
     <key>StandardOutPath</key>
     <string>{insert file path here}</string>
 
     <key>ProgramArguments</key>
     <array>
-        <!-- A command to run your Python script -->
+        <!-- Tell your daemon what it should execute -->
         <!-- Param 1: Path to your Python intepreter (run 'which python' in the terminal) -->
-        <!-- Param 2: Path to your Python script (right-click on main.py + option + copy as pathname) -->
-        <string>{insert path to your Python interpreter here}</string>
-        <string>{insert path to your Python script here}</string>
+        <!-- Param 2: Path to main.py (right-click on file + option + copy as pathname) -->
+        <string>{insert file path here}</string>
+        <string>{insert file path here}</string>
     </array>
 
   </dict>

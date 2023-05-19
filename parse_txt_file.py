@@ -22,7 +22,7 @@ def parse_to_dict(filename):
     # Regex that searches for the following pattern
     pattern = r"(?P<title>.+?) \((?P<author>[^)]+)\)\n- Your (?P<type>Highlight|Note|Bookmark) on (?:page (?P<page>\d+|[ivxlcdm]+) \| )?Location (?P<location>\d+-\d+) \| Added on (?P<date_added>.+?)\n\n(?P<quote>[^\n]+)"
 
-    # Searches for unique matches to the pattern within the text file
+    # Searches for unique matches of the pattern within the text file
     matches = re.findall(pattern, text, re.MULTILINE)
 
     # Create a list of dictionaries, one for each match

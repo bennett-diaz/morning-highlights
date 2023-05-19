@@ -1,5 +1,9 @@
 # Custom
 .env
+.DS_Store
+My Clippings.txt
+counter.txt
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
