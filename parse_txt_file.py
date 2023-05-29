@@ -42,7 +42,6 @@ def parse_to_dict(filename):
                 "quote": quote,
             }
         )
-
     return result
 
 
@@ -54,7 +53,6 @@ def clean_list(my_list):
     for item in my_list:
         quote = item["quote"]
         quote_length = len(quote)
-
         if quote_length > MIN_QUOTE_LENGTH:
             if quote_length > MAX_QUOTE_LENGTH:
                 truncated_quote = quote[:MAX_QUOTE_LENGTH].rsplit(" ", 1)[0] + " ..."
