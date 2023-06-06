@@ -1,4 +1,5 @@
 from twilio.rest import Client
+from twilio.base.exceptions import TwilioRestException
 import os
 from dotenv import load_dotenv, find_dotenv
 
@@ -18,7 +19,7 @@ def send_sms(msg):
             from_=TWILIO_PHONE_NUMBER,
             to=RECEIVER_PHONE_NUMBER,
         )
-    except TwilioError as te:
+    except TwilioRestException as te:
         print(f"Exception: There was a Twilio error in send_sms(): {te}")
 
 
