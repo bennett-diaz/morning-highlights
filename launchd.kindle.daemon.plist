@@ -9,32 +9,32 @@
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>18</integer>
+        <integer>08</integer>
         <key>Minute</key>
-        <integer>00</integer>
+        <integer>30</integer>
     </dict>
 
     <!-- Optional key to run the command when you bootstrap, in addition to the scheduled time -->
     <key>RunAtLoad</key>
     <true/>
    
-    <!-- Input the file path where you want the error log to be saved
+    <!-- Input the absolute file path where you want the error log to be saved
     Example: <string>/Users/john/morning_highlights/stderr.log</string> -->
     <key>StandardErrorPath</key>
-    <string>{insert file path here}</string>
+    <string>/Users/bdiaz/Py/morning-highlights/stderr.log</string>
 
-    <!-- Input the file path where you want the output log to be saved
+    <!-- Input the absolute file path where you want the output log to be saved
     Example: <string>/Users/john/morning_highlights/stdout.log</string> -->
     <key>StandardOutPath</key>
-    <string>{insert file path here}</string>
+    <string>/Users/bdiaz/Py/morning-highlights/stdout.log</string>
 
     <key>ProgramArguments</key>
     <array>
         <!-- Tell your daemon what it should execute -->
-        <!-- Param 1: Path to your Python intepreter (run 'which python' in the terminal) -->
-        <!-- Param 2: Path to main.py (right-click on file + option + copy as pathname) -->
-        <string>{insert file path here}</string>
-        <string>{insert file path here}</string>
+        <!-- Param 1: Absolute path to your Python intepreter (run 'which python' in the terminal) -->
+        <!-- Param 2: ABsolute path to main.py (right-click on file + option + copy as pathname) -->
+        <string>/Users/bdiaz/opt/anaconda3/bin/python</string>
+        <string>/Users/bdiaz/Py/morning-highlights/main.py</string>
     </array>
 
   </dict>

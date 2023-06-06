@@ -2,7 +2,7 @@
 Send a quote from your Kindle library to your mobile phone each morning to continuously reinforce what you have read
 
 ## Compatibility
-Currently supported on MacOS only, since the scheduling capability is powered by a daemon on Mac's launchd. If you use a different OS, you will need to replace the daemon defined in `launchd.kindle.daemon.plist` with a cron job (for Linux) or Task Schedule job (for Windows).
+Currently supported on MacOS only, since the scheduling capability is powered by a daemon on **launchd**. If you use a different OS, you will need to replace the daemon defined in `launchd.kindle.daemon.plist` with a **cron job** for Linux or **Task Scheduler** job for Windows.
 
 ## Instructions
 ### Export your Kindle highlights 
@@ -22,7 +22,7 @@ Currently supported on MacOS only, since the scheduling capability is powered by
 1. Navigate to the `launch.kindle.daemon.plist` file. Here is where you configure the behavior of your daemon
 2. Set the `StartCalendarInterval` key to the time to send the daily SMS
 3. Set the `StandardErrorPath`, `StandardOutPath`, and `ProgramArguments` as instructed in the file comments
-3. If you have trouble with setup, I have a tutorial repo at [simple-launchd-template](https://github.com/bennett-diaz/simple-launchd-template)
+3. If you have trouble with setup, check out my launchd tutorial at [simple-launchd-template](https://github.com/bennett-diaz/simple-launchd-template)
 
 ### Deploy your daemon
 1. Configure the `launchd.kindle.daemon.plist` file as instructed the file comments
