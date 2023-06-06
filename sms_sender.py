@@ -13,12 +13,12 @@ client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 def send_sms(msg):
     try:
-        message = client.messages.create(
+        client.messages.create(
             body=msg,
             from_=TWILIO_PHONE_NUMBER,
             to=RECEIVER_PHONE_NUMBER,
         )
-    except TwilioException as te:
+    except TwilioError as te:
         print(f"Exception: There was a Twilio error in send_sms(): {te}")
 
 
