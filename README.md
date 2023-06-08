@@ -12,11 +12,14 @@ Currently supported on MacOS only, since the scheduling capability is powered by
 4. Eject the Kindle drive
 
 ### Install the program
-1. Clone this repository
-2. Move the `My Clippings.txt` file into your project folder
-3. Input the absolute file path of 'My Clippings.txt' to your .env file
-4. Input your Twilio API credentials and phone numbers into the .env file
-5. Run main.py in your IDE to ensure program is working
+1. If you don't have Python installed, [install it from here](https://www.python.org/downloads/)
+2. Clone this repository
+3. Navigate to the project folder and create a virtual environment
+4. Install package dependencies via `pip3 install -r requirements.txt`
+5. Move the `My Clippings.txt` file into your project folder
+6. Input the absolute file path of 'My Clippings.txt' to your .env file
+7. Input your Twilio API credentials and phone numbers into the .env file
+8. Run main.py in your IDE to ensure program is working
 
 ### Schedule daily SMS using a daemon
 1. Navigate to the `launch.kindle.daemon.plist` file. Here is where you configure the behavior of your daemon
