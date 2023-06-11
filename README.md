@@ -1,8 +1,8 @@
 # morning-highlights
-Send a quote from your Kindle library to your mobile phone each morning to continuously reinforce what you have read
+Send a quote from your Kindle library to your mobile phone daily to continuously reinforce what you read
 
 ## Compatibility
-Currently supported on MacOS only, since the scheduling capability is powered by a daemon on **launchd**. If you use a different OS, you will need to replace the daemon defined in `launchd.kindle.daemon.plist` with a **cron job** for Linux or **Task Scheduler** job for Windows.
+Currently supported on MacOS only, since the scheduling capability is powered by a daemon on *launchd*. If you use a different OS, you will need to replace the daemon defined in `launchd.kindle.daemon.plist` with a *cron job* for Linux or *Task Scheduler* job for Windows.
 
 ## Instructions
 ### Export your Kindle highlights 
@@ -17,7 +17,7 @@ Currently supported on MacOS only, since the scheduling capability is powered by
 3. Navigate to the project folder and create a virtual environment
 4. Install package dependencies via `pip3 install -r requirements.txt`
 5. Move the `My Clippings.txt` file into your project folder
-6. Input the absolute file path of 'My Clippings.txt' to your .env file
+6. Input the absolute file path of `My Clippings.txt` to your .env file
 7. Input your Twilio API credentials and phone numbers into the .env file
 8. Run main.py in your IDE to ensure program is working
 

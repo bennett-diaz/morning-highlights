@@ -21,20 +21,20 @@
     <!-- Input the absolute file path where you want the error log to be saved
     Example: <string>/Users/john/morning_highlights/stderr.log</string> -->
     <key>StandardErrorPath</key>
-    <string>/Users/bdiaz/Py/morning-highlights/stderr.log</string>
+    <string>insert path here</string>
 
     <!-- Input the absolute file path where you want the output log to be saved
     Example: <string>/Users/john/morning_highlights/stdout.log</string> -->
     <key>StandardOutPath</key>
-    <string>/Users/bdiaz/Py/morning-highlights/stdout.log</string>
+    <string>insert path here</string>
 
     <key>ProgramArguments</key>
     <array>
         <!-- Tell your daemon what it should execute -->
         <!-- Param 1: Absolute path to your Python intepreter (run 'which python' in the terminal) -->
         <!-- Param 2: ABsolute path to main.py (right-click on file + option + copy as pathname) -->
-        <string>/Users/bdiaz/opt/anaconda3/bin/python</string>
-        <string>/Users/bdiaz/Py/morning-highlights/main.py</string>
+        <string>insert path here</string>
+        <string>insert path here</string>
     </array>
 
   </dict>
