@@ -26,18 +26,23 @@ def main():
         # Get the index of the quote to send during this iteration
         quote_index = get_quote_index.get_simple_index(list_length)
 
-        # Extract the quote string from the dict
-        quote_body = final_list[quote_index]["quote"]
+        # Extract the quote metadata from the dict
+        quote_title = str(final_list[quote_index]["title"])
+        quote_author = str(final_list[quote_index]["author"])
+        quote_body = str(final_list[quote_index]["quote"])
 
         # Construct message body that Twilio will deliver
         # Print statement is for testing purposes only
         msg = (
-            "Today's quote is at index " + str(quote_index) + ":\n\n" + str(quote_body)
+            "\nToday's quote is from "
+            + quote_title
+            + ":\n\n"
+            + quote_body
         )
         print(msg)
 
         # Invoke the Twilio SMS service
-        sms_sender.send_sms(msg)
+        # sms_sender.send_sms(msg)
 
     except FileNotFoundError as fnfe:
         print(f"Exception: File from .env was not found: {fnfe.filename}")
