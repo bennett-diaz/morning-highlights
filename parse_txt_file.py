@@ -31,6 +31,7 @@ def parse_to_dict(filename):
     # Use a loop to convert each tuple to a dictionary with the required keys and values
     for match in matches:
         title, author, htype, page, location, date_added, quote = match
+        author = author[::-1] #Reverse a tuple
         result.append(
             {
                 "title": title,
