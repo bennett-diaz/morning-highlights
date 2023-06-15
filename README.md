@@ -37,3 +37,4 @@ Currently supported on MacOS only, since the scheduling capability is powered by
 
 ## References
 - https://www.twilio.com/blog/schedule-a-daily-sms-reminder-on-linux-macos-or-windows
+- https://www.twilio.com/docs/libraries/reference/twilio-python/index.html
