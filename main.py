@@ -36,6 +36,8 @@ def main():
         msg = (
             "\nToday's quote is from "
             + quote_title
+            + " by "
+            + quote_author
             + ":\n\n"
             + quote_body
         )
