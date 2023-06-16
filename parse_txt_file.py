@@ -31,6 +31,8 @@ def parse_to_dict(filename):
     # Use a loop to convert each tuple to a dictionary with the required keys and values
     for match in matches:
         title, author, htype, page, location, date_added, quote = match
+        words = author.split(', ') # Split author string to ['Lastname', 'Firstname']
+        author = words[1] + ' ' + words[0] #Replace Firstname with Lastname and conversely
         result.append(
             {
                 "title": title,
